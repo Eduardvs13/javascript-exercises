@@ -1,5 +1,10 @@
-const reverseString = function() {
-
+const reverseString = function(string) {
+    let array= string.split("");
+    let reverseString="";
+    array.forEach(letter => {
+        reverseString=letter+reverseString;
+    });
+    return reverseString;
 };
 
 // Do not edit below this line
